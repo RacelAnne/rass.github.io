@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-r"></i>
+                    <div class="logo-text">Racel Anne Pitogo</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/profile.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">BSIT Student</span></h5>
+                    <h1>Racel Anne Pitogo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/racelanne.pitogo.7/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/RacelAnne"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+            strings:["Graphic Designer","Game Enthusiast","UX Designer"],
+            typedSpeed: 70,
+            backSpeed: 60,
+            loop:true
+        })
+    </script>
+</body>
+</html>
